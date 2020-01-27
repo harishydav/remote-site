@@ -8,10 +8,10 @@
 /* ================================
 Imports
 ================================= */
-@import url("font-awesome.min.css");
-@import url("simpletextrotator.css");
-@import url("overwrite.css");
-@import url("animate.css");
+@import url('font-awesome.min.css');
+@import url('simpletextrotator.css');
+@import url('overwrite.css');
+@import url('animate.css');
 
 /* ================================
 General
@@ -19,7 +19,7 @@ General
 
 body {
   text-align: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 1.6em;
 }
@@ -58,7 +58,7 @@ h6,
   color: #3a3a3a;
   font-weight: 700;
   margin-bottom: 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .lead {
@@ -287,7 +287,7 @@ Intro
 }
 
 #intro .item::before {
-  content: "";
+  content: '';
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   height: 100%;
@@ -397,7 +397,7 @@ Intro
 }
 
 #intro .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -562,7 +562,7 @@ Works
 .og-grid li.og-expanded > a::after {
   top: auto;
   border: solid transparent;
-  content: " ";
+  content: ' ';
   height: 0;
   width: 0;
   position: absolute;
@@ -601,7 +601,7 @@ Works
 
 .og-close::before,
 .og-close::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   top: 50%;
@@ -923,4 +923,25 @@ more media queries
   header h1 {
     font-size: 70px;
   }
+}
+
+#apply {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 3px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: gray;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #00c1c1;
+}
+
+#apply :hover {
+  color: #00c1c1;
 }
