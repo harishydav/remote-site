@@ -148,19 +148,18 @@ padding-top: 20%;
             <div class="col-lg-6 col-md-10">
               <div class="header-content text-center">
                 <h3 class="header-title" style="color: white;">
-                  Join our community
+                  Accelerate your Job Search
                 </h3>
                 <p
                   class="text"
                   style="padding-bottom: 5%;color: white;padding-top: 5%;"
                 >
-                  UpSkillie is a community of top 1% developers who are
-                  interested in connecting with the most coveted Remote
-                  opportunities.
+                  UpSkillie is a certified talent marketplace for developers springboarding through their job search.
+
                 </p>
                 <div class="header-btn rounded-buttons">
                   <a class="main-btn rounded-three" href="#signup"
-                    >Signup as a Developer</a
+                    >Submit for Referral</a
                   >
                 </div>
               </div>
@@ -193,24 +192,28 @@ padding-top: 20%;
         <div class="row justify-content-end">
           <div class="col-lg-6">
             <div class="services-content">
-              <h5 class="sub-title">UpSkillie community</h5>
-              <h3 class="services-title">Who can join?</h3>
+              <h5 class="sub-title">UpSkillie Referral</h5>
+              <h3 class="services-title">How does it help?</h3>
               <p
                 class="text"
                 style="
     font-size: 16px;
 "
               >
-                Upskillie community is where all of our developers hangout and
-                learn from each other. We connect our community to the most hard
-                to reach opportunities through our network.
-                <br />
-                <br />
+              We can short-circuit your search for the next exciting job through our referral network. <br/><br/>
+                
 
-                After requesting an invite we will reach out to you for
-                participating in our vetting exercise. We select the best of the
-                best.
+
               </p>
+
+              <ul>
+                <li> Our Mentors will interview you and provide a referral certification. </li>
+                <li> This referral certification will help you get immediately shortlisted and in cases skip the first round. </li> <br/> <br/>
+                <li> If this is too good to be true, the mentor will guide you on how to improve through feedback at Zero cost to you. </li>
+              </ul>
+
+              <br/>
+        
             </div>
             <!-- services content -->
           </div>
@@ -320,6 +323,12 @@ padding-top: 20%;
         <div class="row justify-content-center">
           <div style="text-align: center;"  class="col-lg-12">
             <label style="font-size: xx-large;" > Please submit your profile below </label>
+
+            <p>
+              After requesting an invite we will reach out to you for
+              for your technical interview in &lt48 hours.
+
+            </p>
   
           </div>
 
@@ -378,6 +387,21 @@ padding-top: 20%;
                   </div>
                   <div class="col-md-12">
                     <div class="form-input mt-15">
+                      <label>Role / Job Function</label>
+                      <div class="input-items default">
+                        <input
+                          name="role"
+                          type="text"
+                          placeholder=""
+                          required
+                        />
+                        <i class="lni-code"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="form-input mt-15">
                       <label>Linkedin URL</label>
                       <div class="input-items default">
                         <input
@@ -389,19 +413,7 @@ padding-top: 20%;
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-12">
-                    <div class="form-input mt-15">
-                      <label>GitHub URL</label>
-                      <div class="input-items default">
-                        <input
-                          name="github"
-                          type="text"
-                          placeholder="GitHub URL"
-                        />
-                        <i class="lni-github-original"></i>
-                      </div>
-                    </div>
-                  </div>
+
                   <div class="col-md-12">
                     <div class="form-input mt-15">
                       <label>Portfolio URL</label>
@@ -418,24 +430,10 @@ padding-top: 20%;
 
                   <div class="col-md-12">
                     <div class="form-input mt-15">
-                      <label>Your profile image to feature</label>
+                      <label>Notice Period/Last working day</label>
                       <div class="input-items default">
                         <input
-                          id="profile"
-                          name="profile"
-                          type="file"
-                          style="padding: 5px;"
-                        />
-                        <i class="lni-user"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-input mt-15">
-                      <label>Are you working somewhere or looking out?</label>
-                      <div class="input-items default">
-                        <input
-                          name="current"
+                          name="notice_period"
                           type="text"
                           placeholder="Current Employment Status"
                           required
@@ -459,28 +457,15 @@ padding-top: 20%;
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-12">
-                    <div class="form-input mt-15">
-                      <label>Country</label>
-                      <div class="input-items default">
-                        <input
-                          name="country"
-                          type="text"
-                          placeholder="Country"
-                          required
-                        />
-                        <i class="lni-world"></i>
-                      </div>
-                    </div>
-                  </div>
+
                   <div class="col-md-12">
                     <div class="form-input mt-15">
                       <label>Resume</label>
                       <div class="input-items default">
                         <input
                           required
-                          id="resume"
-                          name="resume"
+                          id="file1"
+                          name="file1"
                           type="file"
                           style="padding: 5px;"
                         />
@@ -586,7 +571,7 @@ padding-top: 20%;
         })
 
       const scriptURL =
-        'https://script.google.com/macros/s/AKfycbyfXt5ne8PwMBTTBVBhj2ubF4t0HAR733clxRyRNGlaSnREGagh/exec'
+        'https://script.google.com/macros/s/AKfycbyUcKJghei7lEOfySY05dSCcCi7vE3319aN3VNwyx7COR7G0xm_msSTAIIr5wUYc0uA/exec'
       const form = document.getElementById('candidate-signup')
 
       form.addEventListener('submit', async e => {
@@ -597,10 +582,8 @@ padding-top: 20%;
               icon: "info",
             });
         const body = new FormData(document.getElementById('candidate-signup'))
-        const resumeBase64 = await toBase64(body.get('resume'))
-        body.set('resume', resumeBase64)
-        const profileBase64 = await toBase64(body.get('profile'))
-        body.set('profile', profileBase64)
+        const resumeBase64 = await toBase64(body.get('file1'))
+        body.set('file1', resumeBase64)
 
         console.log('body: ', body)
         fetch(scriptURL, { method: 'POST', body })
